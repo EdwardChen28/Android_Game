@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:weightSum="100"
+        >
+
+        <TextView
+            android:id="@+id/nameShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:textSize="18sp"
+            android:text="@string/empty" />
+
+        <TextView
+            android:id="@+id/scoreShow"
+            android:layout_marginLeft="10dp"
+           
+            android:layout_weight="50"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content"
+            android:text="@string/score" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="0dp"
+        android:background="#FF6666"
+        android:text="@string/red" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="0dp"
+        android:background="#99FF99"
+        android:text="@string/red" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:layout_weight="20"
+        android:text="@string/start"
+        android:textSize="80sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="20"
+        android:text="@string/stop"
+        android:textSize="80sp" />
+
+    <Button
+        android:id="@+id/entername"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/entername" />
+
+</LinearLayout>
